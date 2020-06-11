@@ -1,0 +1,10 @@
+<establish-subscription xmlns="urn:ietf:params:xml:ns:yang:ietf-subscribed-notifications">
+	<stream>
+            <stream-filter>
+		<by-reference>
+			<stream-filter-name>
+			</stream-filter-name>
+		</by-reference>
+            </stream-filter>
+	</stream>
+</establish-subscription>

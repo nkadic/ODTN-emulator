@@ -1,0 +1,8 @@
+  <establish-subscription
+      xmlns="urn:ietf:params:xml:ns:yang:ietf-subscribed-notifications">
+    <stream-xpath-filter> 
+      /
+    </stream-xpath-filter>
+    <stream>NETCONF</stream>
+    <dscp>10</dscp>
+  </establish-subscription>

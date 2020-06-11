@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<data xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <streams xmlns="urn:ietf:params:xml:ns:yang:ietf-subscribed-notifications">
+    <stream>
+      <name/>
+      <description/>
+      <replay-support/>
+      <replay-log-creation-time/>
+      <replay-log-aged-time/>
+    </stream>
+  </streams>
+  <filters xmlns="urn:ietf:params:xml:ns:yang:ietf-subscribed-notifications">
+    <stream-filter>
+      <name/>
+      <stream-xpath-filter/>
+    </stream-filter>
+  </filters>
+  <subscriptions xmlns="urn:ietf:params:xml:ns:yang:ietf-subscribed-notifications">
+    <subscription>
+      <id/>
+      <stream-filter-name/>
+      <stream-xpath-filter/>
+      <stream/>
+      <replay-start-time/>
+      <configured-replay/>
+      <stop-time/>
+      <weighting/>
+      <dependency/>
+      <transport/>
+      <encoding/>
+      <purpose/>
+      <source-interface/>
+      <source-vrf/>
+      <source-address/>
+      <configured-subscription-state/>
+      <receivers>
+        <receiver>
+          <name/>
+          <state/>
+        </receiver>
+      </receivers>
+    </subscription>
+  </subscriptions>
+</data>

@@ -40,23 +40,23 @@ RUN  apt-get update && apt-get upgrade -y \
     && git checkout tags/cmocka-1.0.1 \
     && cmake .. && make && make install \
     && cd ~ && git clone https://github.com/CESNET/libyang.git \
-    && cd libyang && git checkout v0.16-r3 \
+    && cd libyang && git checkout v1.0.176 \
     && mkdir build && cd build && cmake .. \
     && make -j4 && make install && make test -j4 \
     && cd ~ && git clone https://github.com/CESNET/libnetconf2.git \
-    && cd libnetconf2 && git checkout v0.12-r1 \
+    && cd libnetconf2 && git checkout v1.1.26 \
     && mkdir build && cd build && cmake -DENABLE_TLS=ON -DENABLE_SSH=ON .. \
     && make -j4 && make install \
     && cd ~ && git clone https://github.com/sysrepo/sysrepo.git \
-    && cd sysrepo && git checkout v0.7.7 \
+    && cd sysrepo && git checkout v1.4.66 \
     && mkdir build && cd build \
     && cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr .. \
     && make -j4 \
     && ctest && make install \
    &&  cd ~ && git clone https://github.com/CESNET/Netopeer2.git \
-    && cd Netopeer2 && git checkout v0.7-r1 && cd server  \
+    && cd Netopeer2 && git checkout v1.1.34   \
     && mkdir build && cd build && cmake .. \
-    && make -j4 && make install \
+    && make && make install \
     && apt-get install openssh-client -y \
     && apt-get install libncurses5-dev libncursesw5-dev -y \
     && ssh-keygen -t rsa -b 2048 -f /etc/ssh/ssh_host_rsa_key \
